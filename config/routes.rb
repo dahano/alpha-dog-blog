@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#pets'
   get 'dogs', to: 'welcome#dogs'
   get 'cats', to: 'welcome#cats'
+
+  resources :articles
 end
