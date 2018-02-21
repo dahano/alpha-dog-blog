@@ -9,5 +9,7 @@
 </p>
 
 <p>
-  See all article titles <p><%= link_to 'articles', articles_path %></p>
+  See all article titles <p><%= link_to 'articles index', articles_path %></p>
 </p>
+
+<button><%= link_to 'Edit', edit_article_path(@article.id) %></button>
