@@ -39,6 +39,10 @@ $navbar-default-bg: #337ab7;
   font-size: 1.7em;
 }
 
+.btn-primary a {
+  color: #fff;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -57,4 +61,8 @@ footer ul li {
   list-style: none;
   float: right;
   margin-left: 15px;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #fff;
 }
