@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#pets'
   get 'dogs', to: 'welcome#dogs'
   get 'cats', to: 'welcome#cats'
-
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
   resources :articles
 end
