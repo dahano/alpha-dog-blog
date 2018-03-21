@@ -1,4 +1,7 @@
 <h1 align="center">Articles pages</h1>
+<div align="center">
+  <%= will_paginate %>
+</div>
 <table class="table">
   <thead>
     <tr>
@@ -28,3 +31,6 @@
   <% @article = Article.new %>
   <button type="button" class="btn btn-primary"><%= link_to 'new', new_article_path %></button>
 </p>
+<div align="center">
+  <%= will_paginate %>
+</div>
