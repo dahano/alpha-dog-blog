@@ -1,6 +1,6 @@
 # Welcome controller
 class WelcomeController < ApplicationController
   def pets
-    true
+    redirect_to articles_path if logged_in?
   end
 end
