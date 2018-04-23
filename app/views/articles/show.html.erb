@@ -20,8 +20,15 @@
     <% end %>
   </ul>
   <h4 class="center description"><strong>Description:</strong></h4>
-  <hr>
-  <%= simple_format(@article.description) %>
+  <div align="center">
+    <div class='modal-body article-description-box'>
+      <%= simple_format(@article.description) %>
+    </div>
+  </div>
+  <h4 class="center description"><strong>Categories:</strong></h4>
+  <% if @article.categories.any? %>
+    <p>Categories: <%= render @article.categories %></p>
+  <% end %>
   <div class="article-actions">
     <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
       <%= link_to 'Edit', edit_article_path(@article),
